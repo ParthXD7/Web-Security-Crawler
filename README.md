@@ -1,95 +1,48 @@
-# ParthXD7 - Cybersecurity Enthusiast & Ethical Hacker
+# Web Crawler for Web Security Testing
 
-Welcome to my GitHub profile! I'm **Parth Sukhija**, a passionate cybersecurity enthusiast, ethical hacker, and a BCA final-year student with a strong interest in securing digital infrastructures and exploring the depths of technology. I am always eager to learn and share knowledge about cybersecurity, ethical hacking, and innovative solutions to common tech problems.
+Welcome to the **Web Crawler for Web Security Testing** repository! This project is a **multi-threaded web crawler** designed to help identify hidden paths, files, and potential vulnerabilities within websites. Built with security assessments in mind, this crawler can help penetration testers, bug hunters, and security enthusiasts find exposed endpoints like `/admin`, `/login`, and `/dashboard`.
 
-## 🚀 About Me
+As a **cybersecurity fresher** and ethical hacking enthusiast, I created this tool to assist in **web application security** audits, vulnerability discovery, and penetration testing.
 
-- 🔐 **Cybersecurity**: Certified in Ethical Hacking, with a deep interest in securing systems, networks, and applications.
-- 💻 **Technology Enthusiast**: Love experimenting with new tools, coding scripts, and learning the latest in cybersecurity tech.
-- 🎮 **Gaming & Cyber Defense**: A role-player at heart who loves the challenge of cybersecurity games and CTFs (Capture The Flag).
-- 🔍 **Passionate Learner**: I am constantly researching new vulnerabilities, threat intelligence, and innovative defensive techniques.
-- 📈 **Career Goals**: My goal is to build a career in cybersecurity, where I can contribute to securing organizations' assets and systems.
-  
-## 🛠️ Technologies & Tools
+## 🚀 Features
 
-- **Programming Languages**: Python, C, C++, JavaScript, Bash
-- **Tools**:
-  - Burp Suite
-  - Wireshark
-  - Metasploit Framework
-  - Kali Linux
-  - Nmap
-  - WiFi Deauthentication
-  - Hydra
-  - Nessus
-  - Nikto
-- **Technologies**:
-  - Web Application Security (OWASP)
-  - Network Security
-  - Penetration Testing
-  - Vulnerability Assessment
-  - Cryptography & Encryption
-  - Malware Analysis
+- **Crawl Website Paths**: Automatically crawls common paths like `/admin`, `/login`, `/logout`, `/dashboard`, and more.
+- **Multi-threading**: Utilizes threading to speed up the crawling process and improve efficiency.
+- **Path Discovery**: Scans for hidden directories and files using a list of common paths (e.g., `/config`, `/upload`, `/admin.php`).
+- **Customizable Depth**: Allows users to set crawl depth to explore deeper into the website’s structure.
+- **Automated Vulnerability Scanning**: Detects common vulnerable paths that could be exposed.
+- **CSV Report**: Saves results in a well-structured **CSV file** for easier readability and tracking.
+- **Organized Logs**: Saves detailed logs of found paths, response codes, and server status.
 
-## 🔐 Key Projects
+## 🛠️ Technologies & Tools Used
 
-Here are some of the projects I've worked on. These include some hands-on work with ethical hacking, web security, and more.
+- **Programming Language**: Python
+- **Libraries**: 
+  - `requests`
+  - `aiohttp` (for asynchronous requests)
+  - `BeautifulSoup`
+  - `threading` (for multi-threading)
+  - `csv` (for storing results)
+- **OS**: Cross-platform (Linux, Windows, macOS)
 
-### 1. **[Web Crawler for Security Testing](https://github.com/ParthXD7/Web-Security-Crawler)**
-   - A multi-threaded web crawler that discovers hidden paths on websites, checks for common vulnerabilities, and identifies files.
-   - Implements Python with libraries like `aiohttp` and `BeautifulSoup`.
-   - Designed for discovering sensitive areas like `/admin`, `/login`, and `/config`, enhancing web security audits.
+## 💻 How It Works
 
-### 2. **[Penetration Testing Scripts](https://github.com/ParthXD7/PenTest-Scripts)**
-   - A collection of tools for penetration testing, vulnerability scanning, and security assessments.
-   - Includes custom scripts for discovering vulnerabilities like SQL Injection, XSS, and SSRF.
+1. **User Input**: The user is prompted to enter the website URL and desired crawl depth.
+2. **Crawl Common Paths**: The crawler attempts to find common paths on the website (like `/admin`, `/login`, `/dashboard`).
+3. **Multi-Threading**: Multiple threads are used to ensure fast and efficient crawling of paths.
+4. **Log Results**: The results, including status codes and response data, are saved into a CSV file for review.
+5. **CSV Report**: The crawler generates a structured **CSV report** with details like the URL, response code, and status.
 
-### 3. **[Capture the Flag (CTF) Challenges](https://github.com/ParthXD7/CTF-Solutions)**
-   - Solutions to CTF challenges related to web security, cryptography, binary exploitation, and network security.
-   - Includes explanations and walkthroughs for common CTF challenges.
+## 🔑 Key Features
 
-### 4. **[Cybersecurity Blog](https://parthxd7.medium.com/)**
-   - Regular posts on cybersecurity topics, ethical hacking techniques, and tips to improve security skills.
-   - Offers tutorials, best practices, and security news updates.
+- **Fast Crawling with Threading**: Improve the speed of path crawling by using threads.
+- **Web Application Security Focus**: Designed to look for common entry points and sensitive areas like `/admin` and `/config`.
+- **Common Path Discovery**: The crawler checks for over 100 common paths and files.
+- **Report Generation**: Automatically saves a CSV file for organized results.
 
-## 📝 Certifications
+## 📥 Installation
 
-- **Certified Ethical Hacker (CEH)** - EC-Council
-- **CompTIA Security+**
-- **Cisco Certified Network Associate (CCNA)**
-- **Certified Information Systems Security Professional (CISSP)** (In progress)
-
-## 📚 Education
-
-- **Bachelor of Computer Applications (BCA)** - Final Year Student
-  - Specialization in Cybersecurity and Ethical Hacking
-  - Currently learning about **Data Warehousing**, **ETL Technologies**, and **Cloud Security**.
-
-## 💼 Career Goals
-
-- Looking for opportunities as a **Cybersecurity Analyst** or **Penetration Tester**.
-- Interested in working on **bug bounty programs**, **network defense**, and **incident response**.
-- Focus on contributing to open-source security projects, research, and building innovative security solutions.
-
-## 💬 Let's Connect
-
-Feel free to reach out to me for collaboration, questions, or just to talk about cybersecurity!
-
-- **Email**: parth.sukhija@domain.com
-- **LinkedIn**: [Parth Sukhija](https://www.linkedin.com/in/parth-sukhija/)
-- **Twitter**: [@ParthXD7](https://twitter.com/ParthXD7)
-- **Instagram**: [@ParthXD7](https://www.instagram.com/parthxd7/)
-
-## 📂 Projects in the Pipeline
-
-- Building a **custom vulnerability scanner** to check for known CVEs in web applications.
-- Developing a **network intrusion detection system (NIDS)**.
-- Automating **Phishing Attack** simulations for educational purposes.
-
-## 📑 Contribution Guidelines
-
-I welcome contributions to any of my projects! If you're looking to help, feel free to fork the repository, submit a pull request, or open an issue. I’m always happy to collaborate with other cybersecurity enthusiasts and professionals.
-
----
-
-Thanks for visiting my GitHub! I'm excited to share my work and collaborate with other cybersecurity professionals and enthusiasts. 🌐🔐
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/ParthXD7/Web-Security-Crawler.git
+   cd Web-Security-Crawler
